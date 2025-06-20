@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Секретна сторінка</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+    <div class="login-container">
+        <h2>Супер секретні дані</h2>
+        <ul>
+            {% for fact in secret_data %}
+                <li>{{ fact }}</li>
+            {% endfor %}
+        </ul>
+        <a href="{{ url_for('logout') }}" class="logout-button">Вийти</a>
+    </div>
+</body>
+</html>
