@@ -73,3 +73,8 @@ body {
 .logout-button:hover {
     background: #c0392b;
 }
+
+input[type="text"], input[type="password"], button {
+  width: 100%;       /* Встановити ширину 100% від контейнера */
+  box-sizing: border-box;  /* Враховує падінги і бордери у ширину */
+}
